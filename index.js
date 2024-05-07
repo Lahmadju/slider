@@ -1,6 +1,7 @@
 let images = [
 	{
 		url: "images/image1.png",
+		title: "Rostov-on-Don, Admiral",
 		description: "Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families",
 		city: "Rostov-on-Don \n LCD admiral",
 		area: "81 m2",
@@ -10,6 +11,7 @@ let images = [
 
 	{
 		url: "images/image2.png",
+		title: "Sochi Thieves",
 		description: "Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families",
 		city: "Sochi \n Thieves",
 		area: "105 m2",
@@ -19,6 +21,7 @@ let images = [
 
 	{
 		url: "images/image3.png",
+		title: "Rostov-on-Don Patriotic",
 		description: "Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families",
 		city: "Rostov-on-Don \n Patriotic",
 		area: "93 m2",
@@ -39,6 +42,7 @@ function initSlider(options) {
 	let sliderArrows = document.querySelector(".slider__arrows");
 	let sliderDots = document.querySelector(".slider__dots");
 	let sliderTitles = document.querySelector(".slider_info-title");
+	let sliderNavTitle = document.querySelector(".slider_nav-list")
 
 	let sliderCategory = document.querySelectorAll(".slider__description");
 	let sliderCitys = document.querySelector(".slider_info-category-description-city");
@@ -90,10 +94,18 @@ function initSlider(options) {
 	function initDots() {
 		images.forEach((image, index) => {
 			let dot = `<div class="slider__dots-item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
+			let navTitle = `<li><span class="slider_nav-list_link n${index} ${index === 0? "active" : ""}" data-index="${index}">${image.title}</span></li>`;
 			sliderDots.innerHTML += dot;
+			sliderNavTitle.innerHTML += navTitle;
 		});
 		sliderDots.querySelectorAll(".slider__dots-item").forEach(dot => {
 			dot.addEventListener("click", function() {
+				moveSlider(this.dataset.index);
+			})
+		})
+
+		sliderNavTitle.querySelectorAll(".slider_nav-list_link").forEach(navTitle => {
+			navTitle.addEventListener("click", function() {
 				moveSlider(this.dataset.index);
 			})
 		})
@@ -105,6 +117,8 @@ function initSlider(options) {
 		if (options.dots) {
 			sliderDots.querySelector(".active").classList.remove("active");
 			sliderDots.querySelector(".n" + num).classList.add("active");
+			sliderNavTitle.querySelector(".active").classList.remove("active");
+			sliderNavTitle.querySelector(".n" + num).classList.add("active");
 		}
 		if (options.description) changeTitle(num);
 		if (options.category) {
