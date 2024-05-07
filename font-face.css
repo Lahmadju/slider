@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  src: local("NunitoSans Regular"), 
+       local("NunitoSans-Regular"), 
+       url("../font/Nunito-Sans/woff2/NunitoSans-Regular.woff2") format('woff2'),
+       url("../font/Nunito-Sans/woff/NunitoSans-Regular.woff") format('woff'),
+       url("../font/Nunito-Sans/eot/NunitoSans-Regular.eot") format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  src: local("NunitoSans Italic"), 
+       local("NunitoSans-Italic"), 
+       url("../font/Nunito-Sans/woff2/NunitoSans-Italic.woff2") format('woff2'),
+       url("../font/Nunito-Sans/woff/NunitoSans-Italic.woff") format('woff'),
+       url("../font/Nunito-Sans/eot/NunitoSans-Italic.eot") format('eot');
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  src: local("NunitoSans SemiBold"), 
+       local("NunitoSans-SemiBold"), 
+       url("../font/Nunito-Sans/woff2/NunitoSans-SemiBold.woff2") format('woff2'),
+       url("../font/Nunito-Sans/woff/NunitoSans-SemiBold.woff") format('woff'),
+       url("../font/Nunito-Sans/eot/NunitoSans-SemiBold.eot") format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  src: local("NunitoSans SemiBoldItalic"), 
+       local("NunitoSans-SemiBoldItalic"), 
+       url("../font/Nunito-Sans/woff2/NunitoSans-SemiBoldItalic.woff2") format('woff2'),
+       url("../font/Nunito-Sans/woff/NunitoSans-SemiBoldItalic.woff") format('woff'),
+       url("../font/Nunito-Sans/eot/NunitoSans-SemiBoldItalic.eot") format('eot');
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  src: local("NunitoSans Bold"), 
+       local("NunitoSans-Bold"), 
+       url("../font/Nunito-Sans/woff2/NunitoSans-Bold.woff2") format('woff2'),
+       url("../font/Nunito-Sans/woff/NunitoSans-Bold.woff") format('woff'),
+       url("../font/Nunito-Sans/eot/NunitoSans-Bold.eot") format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  src: local("NunitoSans BoldItalic"), 
+       local("NunitoSans-BoldItalic"), 
+       url("../font/Nunito-Sans/woff2/NunitoSans-BoldItalic.woff2") format('woff2'),
+       url("../font/Nunito-Sans/woff/NunitoSans-BoldItalic.woff") format('woff'),
+       url("../font/Nunito-Sans/eot/NunitoSans-BoldItalic.eot") format('eot');
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  src: local("YesevaOne Regular"), 
+       local("YesevaOne-Regular"), 
+       url("../font/Yeseva-One/woff2/YesevaOne-Regular.woff2") format('woff2'),
+       url("../font/Yeseva-One/woff/YesevaOne-Regular.woff") format('woff'),
+       url("../font/Yeseva-One/eot/YesevaOne-Regular.eot") format('eot');
+  font-style: normal;
+  font-display: swap;
+}
